@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--
+  ============================================================
+  HOW TO USE THIS PAGE
+  ============================================================
+  1. Replace "Your Brand" with your channel / blog name.
+  2. Replace each product card's:
+       - emoji (the 🔲 icon)
+       - title
+       - short description
+       - price
+       - the HREF in the <a> button with YOUR Amazon
+         Associates link, e.g.
+         https://www.amazon.com/dp/ASIN?tag=yourid-20
+  3. Keep the disclosure paragraph at the bottom (required by
+     the Amazon Associates Operating Agreement).
+  4. Host it free on Netlify Drop, GitHub Pages, or Vercel.
+  ============================================================
+-->
+<title>Best Home & Kitchen Finds 2026 — Your Brand</title>
+<meta name="description" content="Hand-picked home and kitchen products I actually use and recommend. Honest recommendations with Amazon links.">
+<style>
+  :root{
+    --accent:#e76f51;
+    --accent-dark:#c75b3f;
+    --bg:#fdf6f0;
+    --card:#ffffff;
+    --text:#2b2b2b;
+    --muted:#7a7a7a;
+    --radius:18px;
+    --shadow:0 8px 24px rgba(0,0,0,.08);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:var(--bg);color:var(--text);line-height:1.6;
+  }
+  a{text-decoration:none;color:inherit}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+
+  /* Header */
+  header{
+    text-align:center;padding:56px 20px 40px;
+    background:linear-gradient(135deg,#fff 0%,#fdeee6 100%);
+  }
+  header .brand{
+    font-size:14px;letter-spacing:3px;text-transform:uppercase;
+    color:var(--accent);font-weight:700;margin-bottom:14px;
+  }
+  header h1{font-size:clamp(28px,5vw,44px);line-height:1.2;margin-bottom:14px}
+  header p{max-width:620px;margin:0 auto;color:var(--muted);font-size:17px}
+
+  /* Product grid */
+  .grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:26px;padding:48px 0;
+  }
+  .card{
+    background:var(--card);border-radius:var(--radius);overflow:hidden;
+    box-shadow:var(--shadow);transition:transform .2s ease,box-shadow .2s ease;
+    display:flex;flex-direction:column;
+  }
+  .card:hover{transform:translateY(-6px);box-shadow:0 14px 34px rgba(0,0,0,.12)}
+  .thumb{
+    height:180px;display:flex;align-items:center;justify-content:center;
+    font-size:72px;background:linear-gradient(135deg,#fbe9e0,#f6d9cd);
+  }
+  .body{padding:22px;display:flex;flex-direction:column;flex:1}
+  .body h3{font-size:20px;margin-bottom:8px}
+  .body p{color:var(--muted);font-size:15px;margin-bottom:14px;flex:1}
+  .price{font-weight:700;color:var(--accent-dark);margin-bottom:16px;font-size:18px}
+  .btn{
+    display:block;text-align:center;background:var(--accent);color:#fff;
+    padding:13px 18px;border-radius:12px;font-weight:700;font-size:15px;
+    transition:background .2s ease;
+  }
+  .btn:hover{background:var(--accent-dark)}
+
+  /* About / disclosure */
+  .about{
+    background:#fff;border-radius:var(--radius);padding:36px;
+    box-shadow:var(--shadow);margin:0 0 48px;
+  }
+  .about h2{font-size:24px;margin-bottom:12px}
+  .about p{color:var(--muted);margin-bottom:10px}
+  .disclosure{
+    font-size:13px;color:#9a9a9a;border-top:1px solid #eee;
+    padding-top:16px;margin-top:8px;
+  }
+
+  footer{text-align:center;padding:30px;color:var(--muted);font-size:14px}
+
+  @media(max-width:480px){
+    .thumb{font-size:60px;height:150px}
+    .about{padding:24px}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">Your Brand</div>
+  <h1>Best Home &amp; Kitchen Finds 2026</h1>
+  <p>Real products I use every day — curated so you don't have to waste time (or money) guessing. Tap any item to see it on Amazon.</p>
+</header>
+
+<div class="wrap">
+
+  <section class="grid">
+
+    <!-- PRODUCT CARD 1 -->
+    <article class="card">
+      <div class="thumb">☕</div>
+      <div class="body">
+        <h3>Product Title One</h3>
+        <p>One-line honest description of why you like it and who it's for.</p>
+        <div class="price">$24.99</div>
+        <a class="btn" href="https://www.amazon.com/dp/REPLACE-ASIN?tag=yourid-20">View on Amazon</a>
+      </div>
+    </article>
+
+    <!-- PRODUCT CARD 2 -->
+    <article class="card">
+      <div class="thumb">🍳</div>
+      <div class="body">
+        <h3>Product Title Two</h3>
+        <p>Short, specific benefit — what problem it solves for the buyer.</p>
+        <div class="price">$39.00</div>
+        <a class="btn" href="https://www.amazon.com/dp/REPLACE-ASIN?tag=yourid-20">View on Amazon</a>
+      </div>
+    </article>
+
+    <!-- PRODUCT CARD 3 -->
+    <article class="card">
+      <div class="thumb">🧹</div>
+      <div class="body">
+        <h3>Product Title Three</h3>
+        <p>Keep it genuine — people trust real experience over hype.</p>
+        <div class="price">$18.50</div>
+        <a class="btn" href="https://www.amazon.com/dp/REPLACE-ASIN?tag=yourid-20">View on Amazon</a>
+      </div>
+    </article>
+
+    <!-- PRODUCT CARD 4 -->
+    <article class="card">
+      <div class="thumb">💡</div>
+      <div class="body">
+        <h3>Product Title Four</h3>
+        <p>Mention a use-case so readers can picture owning it.</p>
+        <div class="price">$29.99</div>
+        <a class="btn" href="https://www.amazon.com/dp/REPLACE-ASIN?tag=yourid-20">View on Amazon</a>
+      </div>
+    </article>
+
+    <!-- PRODUCT CARD 5 -->
+    <article class="card">
+      <div class="thumb">🛋️</div>
+      <div class="body">
+        <h3>Product Title Five</h3>
+        <p>A small upgrade that makes daily life noticeably better.</p>
+        <div class="price">$45.00</div>
+        <a class="btn" href="https://www.amazon.com/dp/REPLACE-ASIN?tag=yourid-20">View on Amazon</a>
+      </div>
+    </article>
+
+    <!-- PRODUCT CARD 6 -->
+    <article class="card">
+      <div class="thumb">🔌</div>
+      <div class="body">
+        <h3>Product Title Six</h3>
+        <p>If you use it and love it, say so — that's the whole strategy.</p>
+        <div class="price">$15.99</div>
+        <a class="btn" href="https://www.amazon.com/dp/REPLACE-ASIN?tag=yourid-20">View on Amazon</a>
+      </div>
+    </article>
+
+  </section>
+
+  <section class="about">
+    <h2>About This Page</h2>
+    <p>Hi, I'm [Your Name] — I test home and kitchen gear so you can buy with confidence. Everything linked here is something I've actually used. If a product earns a spot, it's because it's worth your money.</p>
+    <p>Have a question about any item? Reach me at [your email].</p>
+    <p class="disclosure">Your Brand is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. As an Amazon Associate I earn from qualifying purchases. Prices and availability are accurate as of the date of publication and are subject to change.</p>
+  </section>
+
+</div>
+
+<footer>
+  © 2026 Your Brand · Built for honest recommendations
+</footer>
+
+</body>
+</html>
